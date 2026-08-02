@@ -1,0 +1,146 @@
+[
+  {
+    "id": "intent:structured",
+    "type": "intent",
+    "text": "A direct, quantitative question answerable from computed metrics - momentum, velocity, price, stock levels, rankings. No reasoning or explanation is required, just retrieve and sort or filter numbers.",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:structured:ex1",
+    "type": "intent",
+    "text": "which styles are trending right now",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:structured:ex2",
+    "type": "intent",
+    "text": "what is the average price for graphic tees across competitors",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:structured:ex3",
+    "type": "intent",
+    "text": "which competitor SKUs have been out of stock the most in the last 4 weeks",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:structured:ex4",
+    "type": "intent",
+    "text": "what is our best-selling style this month",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:structured:ex5",
+    "type": "intent",
+    "text": "which style has the fastest growing rating velocity",
+    "metadata": {"type": "intent", "intent": "structured"}
+  },
+  {
+    "id": "intent:explanatory",
+    "type": "intent",
+    "text": "A why question asking for the reason behind a trend or number. Needs the structured momentum data plus supporting evidence - specific posts or products - to explain the cause.",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:explanatory:ex1",
+    "type": "intent",
+    "text": "why is the cropped zip-up jacket declining",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:explanatory:ex2",
+    "type": "intent",
+    "text": "why has this style lost momentum",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:explanatory:ex3",
+    "type": "intent",
+    "text": "what is driving the graphic print trend",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:explanatory:ex4",
+    "type": "intent",
+    "text": "why are competitors losing traction on this style",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:explanatory:ex5",
+    "type": "intent",
+    "text": "what is causing this style to decline",
+    "metadata": {"type": "intent", "intent": "explanatory"}
+  },
+  {
+    "id": "intent:semantic",
+    "type": "intent",
+    "text": "A question phrased in aesthetic or vibe language that falls outside the fixed style_tag taxonomy - requires similarity search over free text rather than exact tag matching.",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:semantic:ex1",
+    "type": "intent",
+    "text": "show me anything y2k adjacent or nostalgic in what is trending",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:semantic:ex2",
+    "type": "intent",
+    "text": "what feels like elevated basics versus loud streetwear",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:semantic:ex3",
+    "type": "intent",
+    "text": "is there anything similar to oversized hoodies gaining traction that we have not tagged yet",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:semantic:ex4",
+    "type": "intent",
+    "text": "find styles with a vintage or throwback vibe",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:semantic:ex5",
+    "type": "intent",
+    "text": "what has a minimalist aesthetic right now",
+    "metadata": {"type": "intent", "intent": "semantic"}
+  },
+  {
+    "id": "intent:strategic",
+    "type": "intent",
+    "text": "A forward-looking recommendation question about what to do next, combining trend data, aesthetic signal, and brand-fit reasoning.",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  },
+  {
+    "id": "intent:strategic:ex1",
+    "type": "intent",
+    "text": "what should our next collection focus on",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  },
+  {
+    "id": "intent:strategic:ex2",
+    "type": "intent",
+    "text": "should we invest in this style for next season",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  },
+  {
+    "id": "intent:strategic:ex3",
+    "type": "intent",
+    "text": "what is the single biggest opportunity we are missing right now",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  },
+  {
+    "id": "intent:strategic:ex4",
+    "type": "intent",
+    "text": "what would you recommend we prioritize next",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  },
+  {
+    "id": "intent:strategic:ex5",
+    "type": "intent",
+    "text": "where should we place our bets next quarter",
+    "metadata": {"type": "intent", "intent": "strategic"}
+  }
+]

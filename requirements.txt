@@ -1,0 +1,12 @@
+boto3==1.40.61
+botocore==1.40.61
+python-dotenv==1.2.1
+langchain-core==1.5.3
+langchain-aws==1.1.0
+requests==2.34.2
+chromadb==1.5.9
+sentence-transformers==5.1.2
+langgraph==1.2.10
+nemoguardrails==0.23.0
+langfuse==4.14.2
+streamlit==1.60.0

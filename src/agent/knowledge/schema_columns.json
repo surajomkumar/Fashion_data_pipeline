@@ -1,0 +1,194 @@
+[
+  {
+    "id": "column:trend_signals.source",
+    "type": "column",
+    "text": "source column in table trend_signals: which data source this row came from - 'competitor', 'self', or 'instagram'. TEXT. Typical clause: WHERE (filter by source), GROUP BY (split results per source).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "source", "clause_hints": "WHERE,GROUP BY"}
+  },
+  {
+    "id": "column:trend_signals.source_id",
+    "type": "column",
+    "text": "source_id column in table trend_signals: the natural ID of the underlying record - competitor SKU, self SKU, or a synthetic 'category::style_tag' cluster ID for instagram rows. TEXT. Typical clause: JOIN (matches competitor_pdp.id, self_catalog.id, or ig_posts.id depending on source), SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "source_id", "clause_hints": "JOIN,SELECT"}
+  },
+  {
+    "id": "column:trend_signals.category",
+    "type": "column",
+    "text": "category column in table trend_signals: the product category, e.g. streetwear_tops. TEXT. Typical clause: WHERE, GROUP BY.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "category", "clause_hints": "WHERE,GROUP BY"}
+  },
+  {
+    "id": "column:trend_signals.style_tag",
+    "type": "column",
+    "text": "style_tag column in table trend_signals: the specific style within a category, e.g. oversized-hoodie. TEXT. Typical clause: WHERE, GROUP BY, SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "style_tag", "clause_hints": "WHERE,GROUP BY,SELECT"}
+  },
+  {
+    "id": "column:trend_signals.brand_or_handle",
+    "type": "column",
+    "text": "brand_or_handle column in table trend_signals: brand name for competitor rows, the literal string 'self' for self rows, NULL for instagram rows. TEXT. Typical clause: WHERE, SELECT, GROUP BY (which brand is stocking a style).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "brand_or_handle", "clause_hints": "WHERE,SELECT,GROUP BY"}
+  },
+  {
+    "id": "column:trend_signals.metric_name",
+    "type": "column",
+    "text": "metric_name column in table trend_signals: which metric this row's weekly values represent - 'rating_velocity' for competitor rows, 'sell_through_rate' for self rows, 'ig_engagement' for instagram rows. TEXT. Typical clause: SELECT, WHERE.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "metric_name", "clause_hints": "SELECT,WHERE"}
+  },
+  {
+    "id": "column:trend_signals.metric_week_now_3",
+    "type": "column",
+    "text": "metric_week_now_3 column in table trend_signals: the tracked metric's value 3 weeks before the most recent week (oldest point in the 4-week window). REAL/numeric. Typical clause: SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "metric_week_now_3", "clause_hints": "SELECT"}
+  },
+  {
+    "id": "column:trend_signals.metric_week_now_2",
+    "type": "column",
+    "text": "metric_week_now_2 column in table trend_signals: the tracked metric's value 2 weeks before the most recent week. REAL/numeric. Typical clause: SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "metric_week_now_2", "clause_hints": "SELECT"}
+  },
+  {
+    "id": "column:trend_signals.metric_week_now_1",
+    "type": "column",
+    "text": "metric_week_now_1 column in table trend_signals: the tracked metric's value 1 week before the most recent week. REAL/numeric. Typical clause: SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "metric_week_now_1", "clause_hints": "SELECT"}
+  },
+  {
+    "id": "column:trend_signals.metric_week_now",
+    "type": "column",
+    "text": "metric_week_now column in table trend_signals: the tracked metric's most recent weekly value. REAL/numeric. Typical clause: SELECT, ORDER BY (current level), AGGREGATE (AVG/SUM for group summaries).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "metric_week_now", "clause_hints": "SELECT,ORDER BY,AGGREGATE"}
+  },
+  {
+    "id": "column:trend_signals.pct_change",
+    "type": "column",
+    "text": "pct_change column in table trend_signals: percent change of the tracked metric from the first to the last week of the 4-week window. REAL/numeric. Typical clause: ORDER BY (ranking questions like fastest/most growing), AGGREGATE (AVG for group summaries), SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "pct_change", "clause_hints": "ORDER BY,AGGREGATE,SELECT"}
+  },
+  {
+    "id": "column:trend_signals.momentum",
+    "type": "column",
+    "text": "momentum column in table trend_signals: categorical trend direction - 'rising', 'flat', or 'declining'. TEXT. Typical clause: WHERE (filter by trend direction), GROUP BY, SELECT.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "momentum", "clause_hints": "WHERE,GROUP BY,SELECT"}
+  },
+  {
+    "id": "column:trend_signals.oos_weeks_out_of_4",
+    "type": "column",
+    "text": "oos_weeks_out_of_4 column in table trend_signals: count of weeks (0 to 4) a SKU was flagged out of stock in the last 4 weeks. INTEGER, NULL for instagram rows. Typical clause: ORDER BY (out of stock the most questions), WHERE.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "oos_weeks_out_of_4", "clause_hints": "ORDER BY,WHERE"}
+  },
+  {
+    "id": "column:trend_signals.oos_status_current",
+    "type": "column",
+    "text": "oos_status_current column in table trend_signals: whether the SKU is currently out of stock. BOOLEAN (0/1), NULL for instagram rows. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "oos_status_current", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:trend_signals.price",
+    "type": "column",
+    "text": "price column in table trend_signals: current price. REAL, NULL for instagram rows. Typical clause: AGGREGATE (AVG for average price questions), ORDER BY, WHERE (price range).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "price", "clause_hints": "AGGREGATE,ORDER BY,WHERE"}
+  },
+  {
+    "id": "column:trend_signals.secondary_metric_name",
+    "type": "column",
+    "text": "secondary_metric_name column in table trend_signals: name of an extra summary metric alongside the main trend - 'rating_avg' for competitor rows, 'units_available_current' for self rows, 'avg_follower_count' for instagram rows. TEXT. Typical clause: WHERE (to select which secondary metric you mean).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "secondary_metric_name", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:trend_signals.secondary_metric_value",
+    "type": "column",
+    "text": "secondary_metric_value column in table trend_signals: the value of whatever secondary_metric_name names for this row - a rating average, units available, or average follower count depending on source. REAL. Typical clause: SELECT, AGGREGATE, ORDER BY.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "secondary_metric_value", "clause_hints": "SELECT,AGGREGATE,ORDER BY"}
+  },
+  {
+    "id": "column:trend_signals.record_count",
+    "type": "column",
+    "text": "record_count column in table trend_signals: 1 for competitor/self rows, or the number of Instagram posts aggregated into an instagram cluster row. INTEGER. Typical clause: SELECT, WHERE (to gauge how much evidence backs an instagram row).",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "record_count", "clause_hints": "SELECT,WHERE"}
+  },
+  {
+    "id": "column:trend_signals.thumbnail_url",
+    "type": "column",
+    "text": "thumbnail_url column in table trend_signals: an image URL for evidence or display. TEXT. Typical clause: SELECT only, never filter on it.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "thumbnail_url", "clause_hints": "SELECT"}
+  },
+  {
+    "id": "column:trend_signals.computed_at",
+    "type": "column",
+    "text": "computed_at column in table trend_signals: UTC timestamp of when this row was computed by the pipeline. TEXT. Rarely needed for analysis questions.",
+    "metadata": {"type": "column", "table": "trend_signals", "column": "computed_at", "clause_hints": "SELECT"}
+  },
+  {
+    "id": "column:competitor_pdp.id",
+    "type": "column",
+    "text": "id column in table competitor_pdp: the competitor SKU, primary key. TEXT. Typical clause: JOIN (matches trend_signals.source_id where source='competitor'), WHERE.",
+    "metadata": {"type": "column", "table": "competitor_pdp", "column": "id", "clause_hints": "JOIN,WHERE"}
+  },
+  {
+    "id": "column:competitor_pdp.category",
+    "type": "column",
+    "text": "category column in table competitor_pdp: product category, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "competitor_pdp", "column": "category", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:competitor_pdp.style_tag",
+    "type": "column",
+    "text": "style_tag column in table competitor_pdp: specific style, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "competitor_pdp", "column": "style_tag", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:competitor_pdp.data",
+    "type": "column",
+    "text": "data column in table competitor_pdp: the FULL original competitor product record as a JSON string. Fields inside include brand, title, bullet_description, price, rating_avg, thumbnail_url. Never SELECT this column directly for a single field - use json_extract(data, '$.fieldname'), e.g. json_extract(data, '$.brand'). Typical clause: SELECT via json_extract only.",
+    "metadata": {"type": "column", "table": "competitor_pdp", "column": "data", "clause_hints": "SELECT-via-json_extract"}
+  },
+  {
+    "id": "column:self_catalog.id",
+    "type": "column",
+    "text": "id column in table self_catalog: the self-catalog SKU, primary key. TEXT. Typical clause: JOIN (matches trend_signals.source_id where source='self'), WHERE.",
+    "metadata": {"type": "column", "table": "self_catalog", "column": "id", "clause_hints": "JOIN,WHERE"}
+  },
+  {
+    "id": "column:self_catalog.category",
+    "type": "column",
+    "text": "category column in table self_catalog: product category, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "self_catalog", "column": "category", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:self_catalog.style_tag",
+    "type": "column",
+    "text": "style_tag column in table self_catalog: specific style, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "self_catalog", "column": "style_tag", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:self_catalog.data",
+    "type": "column",
+    "text": "data column in table self_catalog: the FULL original self-catalog product record as a JSON string. Fields inside include style_name, title, price, units_available_current, launch_date, thumbnail_url. Never SELECT this column directly for a single field - use json_extract(data, '$.fieldname'), e.g. json_extract(data, '$.style_name'). Typical clause: SELECT via json_extract only.",
+    "metadata": {"type": "column", "table": "self_catalog", "column": "data", "clause_hints": "SELECT-via-json_extract"}
+  },
+  {
+    "id": "column:ig_posts.id",
+    "type": "column",
+    "text": "id column in table ig_posts: the Instagram post_id, primary key. TEXT. Typical clause: WHERE. Note: trend_signals.source_id for instagram rows is a 'category::style_tag' cluster id, NOT a post_id, so instagram trend_signals rows cannot be joined to ig_posts by source_id - filter ig_posts by category/style_tag instead.",
+    "metadata": {"type": "column", "table": "ig_posts", "column": "id", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:ig_posts.category",
+    "type": "column",
+    "text": "category column in table ig_posts: product category, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "ig_posts", "column": "category", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:ig_posts.style_tag",
+    "type": "column",
+    "text": "style_tag column in table ig_posts: specific style, pulled out of the JSON blob for direct filtering. TEXT. Typical clause: WHERE.",
+    "metadata": {"type": "column", "table": "ig_posts", "column": "style_tag", "clause_hints": "WHERE"}
+  },
+  {
+    "id": "column:ig_posts.data",
+    "type": "column",
+    "text": "data column in table ig_posts: the FULL original Instagram post record as a JSON string. Fields inside include caption_text, hashtags, influencer_handle, follower_count, likes, comments_count, post_permalink, thumbnail_url. Never SELECT this column directly for a single field - use json_extract(data, '$.fieldname'), e.g. json_extract(data, '$.influencer_handle'). Typical clause: SELECT via json_extract only, or aggregate with SUM(json_extract(data,'$.likes')).",
+    "metadata": {"type": "column", "table": "ig_posts", "column": "data", "clause_hints": "SELECT-via-json_extract,AGGREGATE-via-json_extract"}
+  }
+]

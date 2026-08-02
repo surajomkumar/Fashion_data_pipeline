@@ -1,0 +1,80 @@
+[
+  {
+    "id": "momentum:rising",
+    "type": "momentum",
+    "text": "rising: an upward trend - the tracked metric increased more than 10% over the 4-week window. Also called: trending, trending up, gaining, growing, increasing, picking up.",
+    "metadata": {"type": "momentum", "momentum": "rising"}
+  },
+  {
+    "id": "momentum:rising:ex1",
+    "type": "momentum",
+    "text": "what's trending right now",
+    "metadata": {"type": "momentum", "momentum": "rising"}
+  },
+  {
+    "id": "momentum:rising:ex2",
+    "type": "momentum",
+    "text": "which styles are hot this week",
+    "metadata": {"type": "momentum", "momentum": "rising"}
+  },
+  {
+    "id": "momentum:rising:ex3",
+    "type": "momentum",
+    "text": "what's gaining momentum lately",
+    "metadata": {"type": "momentum", "momentum": "rising"}
+  },
+  {
+    "id": "momentum:rising:ex4",
+    "type": "momentum",
+    "text": "which products are picking up steam",
+    "metadata": {"type": "momentum", "momentum": "rising"}
+  },
+  {
+    "id": "momentum:declining",
+    "type": "momentum",
+    "text": "declining: a downward trend - the tracked metric decreased more than 10% over the 4-week window. Also called: losing momentum, dropping, falling, decreasing, slowing down, fading.",
+    "metadata": {"type": "momentum", "momentum": "declining"}
+  },
+  {
+    "id": "momentum:declining:ex1",
+    "type": "momentum",
+    "text": "what's losing steam right now",
+    "metadata": {"type": "momentum", "momentum": "declining"}
+  },
+  {
+    "id": "momentum:declining:ex2",
+    "type": "momentum",
+    "text": "which styles are cooling off",
+    "metadata": {"type": "momentum", "momentum": "declining"}
+  },
+  {
+    "id": "momentum:declining:ex3",
+    "type": "momentum",
+    "text": "what's falling out of favor lately",
+    "metadata": {"type": "momentum", "momentum": "declining"}
+  },
+  {
+    "id": "momentum:flat",
+    "type": "momentum",
+    "text": "flat: a stable trend - the tracked metric changed less than 10% in either direction over the 4-week window. Also called: steady, stable, unchanged, plateaued, holding.",
+    "metadata": {"type": "momentum", "momentum": "flat"}
+  },
+  {
+    "id": "momentum:flat:ex1",
+    "type": "momentum",
+    "text": "what's staying steady, nothing much changing",
+    "metadata": {"type": "momentum", "momentum": "flat"}
+  },
+  {
+    "id": "momentum:flat:ex2",
+    "type": "momentum",
+    "text": "which styles have plateaued",
+    "metadata": {"type": "momentum", "momentum": "flat"}
+  },
+  {
+    "id": "momentum:flat:ex3",
+    "type": "momentum",
+    "text": "what's holding steady, no real movement",
+    "metadata": {"type": "momentum", "momentum": "flat"}
+  }
+]

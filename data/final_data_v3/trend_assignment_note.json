@@ -1,0 +1,47 @@
+{
+  "category": "streetwear_tops",
+  "momentum_assignment": {
+    "oversized-hoodie": "rising",
+    "graphic-print": "rising",
+    "boxy-tee": "flat",
+    "cropped-zip-up": "declining"
+  },
+  "ig_plan": {
+    "rising": {
+      "count": 14,
+      "weekly_weights": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "flat": {
+      "count": 10,
+      "weekly_weights": [
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    "declining": {
+      "count": 8,
+      "weekly_weights": [
+        3,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  "skipped_style_tags_no_image": [
+    "ribbed-tank"
+  ],
+  "categories_not_yet_available": [
+    "denim_bottoms",
+    "athleisure",
+    "utility_outerwear"
+  ],
+  "note": "v3: full 25-image pool per tag used (5 competitor + 2 self + up to 18 IG), zero repeated images or text across any record."
+}

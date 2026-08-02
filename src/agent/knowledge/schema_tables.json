@@ -1,0 +1,26 @@
+[
+  {
+    "id": "table:trend_signals",
+    "type": "table",
+    "text": "trend_signals: the main analytical table. One row per competitor SKU, self-catalog SKU, or Instagram (category, style_tag) cluster - 20 columns, PRIMARY KEY (source, source_id). Contains momentum, percent change, weekly metric values, price, and stock status. Use this table for any question about trends, momentum, velocity, price, or stock levels - it is the default table for almost every query.",
+    "metadata": {"type": "table", "table": "trend_signals"}
+  },
+  {
+    "id": "table:competitor_pdp",
+    "type": "table",
+    "text": "competitor_pdp: pass-through table holding the full original competitor product record as a JSON blob in the data column, keyed by competitor SKU (id column). Also has category and style_tag columns pulled out for direct filtering. Use this table only when you need product detail not present in trend_signals - brand name, title, bullet description.",
+    "metadata": {"type": "table", "table": "competitor_pdp"}
+  },
+  {
+    "id": "table:self_catalog",
+    "type": "table",
+    "text": "self_catalog: pass-through table holding the full original self-catalog product record as a JSON blob in the data column, keyed by SKU (id column). Also has category and style_tag columns pulled out for direct filtering. Use this table only when you need product detail not present in trend_signals - style name, title, launch date.",
+    "metadata": {"type": "table", "table": "self_catalog"}
+  },
+  {
+    "id": "table:ig_posts",
+    "type": "table",
+    "text": "ig_posts: pass-through table holding the full original Instagram post record as a JSON blob in the data column, keyed by post_id (id column). Also has category and style_tag columns pulled out for direct filtering. Use this table only when you need post detail not present in trend_signals - caption text, hashtags, influencer handle, likes, comments.",
+    "metadata": {"type": "table", "table": "ig_posts"}
+  }
+]

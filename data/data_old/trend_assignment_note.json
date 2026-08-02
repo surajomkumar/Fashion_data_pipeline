@@ -1,0 +1,18 @@
+{
+  "category": "streetwear_tops",
+  "momentum_assignment": {
+    "oversized-hoodie": "rising",
+    "graphic-print": "rising",
+    "boxy-tee": "flat",
+    "cropped-zip-up": "declining"
+  },
+  "skipped_style_tags_no_image": [
+    "ribbed-tank"
+  ],
+  "categories_not_yet_available": [
+    "denim_bottoms",
+    "athleisure",
+    "utility_outerwear"
+  ],
+  "note": "v2: every record uses a distinct source image; every competitor SKU and IG post has unique hand-written copy (no repeated text across records)."
+}

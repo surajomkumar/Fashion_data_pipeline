@@ -1,0 +1,20 @@
+[
+  {
+    "id": "join:trend_signals-competitor_pdp",
+    "type": "join",
+    "text": "To get full competitor product detail (brand, title, bullet_description) for a trend_signals row, join trend_signals.source_id = competitor_pdp.id, only valid where trend_signals.source = 'competitor'. Example: SELECT t.*, json_extract(c.data,'$.brand') FROM trend_signals t JOIN competitor_pdp c ON t.source_id = c.id WHERE t.source = 'competitor'.",
+    "metadata": {"type": "join", "left": "trend_signals.source_id", "right": "competitor_pdp.id", "condition": "source='competitor'"}
+  },
+  {
+    "id": "join:trend_signals-self_catalog",
+    "type": "join",
+    "text": "To get full self-catalog product detail (style_name, title, launch_date) for a trend_signals row, join trend_signals.source_id = self_catalog.id, only valid where trend_signals.source = 'self'. Example: SELECT t.*, json_extract(s.data,'$.style_name') FROM trend_signals t JOIN self_catalog s ON t.source_id = s.id WHERE t.source = 'self'.",
+    "metadata": {"type": "join", "left": "trend_signals.source_id", "right": "self_catalog.id", "condition": "source='self'"}
+  },
+  {
+    "id": "join:trend_signals-ig_posts",
+    "type": "join",
+    "text": "instagram rows in trend_signals are (category, style_tag) CLUSTERS, not individual posts - trend_signals.source_id for instagram is a synthetic 'category::style_tag' string, not a post_id, so it CANNOT be joined to ig_posts.id directly. To get individual posts backing an instagram trend_signals row, filter ig_posts by category AND style_tag instead: SELECT * FROM ig_posts WHERE category = ? AND style_tag = ?.",
+    "metadata": {"type": "join", "left": "trend_signals.category+style_tag", "right": "ig_posts.category+style_tag", "condition": "source='instagram'"}
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "style_tag:oversized-hoodie",
+    "type": "style_tag",
+    "text": "oversized-hoodie: an oversized, drop-shoulder pullover hoodie with a relaxed, boxy silhouette worn loose. Also called: baggy hoodie, big hoodie, drop-shoulder hoodie.",
+    "metadata": {"type": "style_tag", "style_tag": "oversized-hoodie", "category": "streetwear_tops"}
+  },
+  {
+    "id": "style_tag:boxy-tee",
+    "type": "style_tag",
+    "text": "boxy-tee: a boxy-fit t-shirt with a squared-off, non-tapered silhouette. Also called: boxy t-shirt, box-fit tee, straight-cut tee.",
+    "metadata": {"type": "style_tag", "style_tag": "boxy-tee", "category": "streetwear_tops"}
+  },
+  {
+    "id": "style_tag:cropped-zip-up",
+    "type": "style_tag",
+    "text": "cropped-zip-up: a cropped zip-up jacket or track top that ends at or above the waist. Also called: crop zip jacket, cropped track jacket.",
+    "metadata": {"type": "style_tag", "style_tag": "cropped-zip-up", "category": "streetwear_tops"}
+  },
+  {
+    "id": "style_tag:graphic-print",
+    "type": "style_tag",
+    "text": "graphic-print: a t-shirt or top featuring a graphic or printed design - logos, illustrations, statement text. Also called: graphic tee, printed tee, statement tee.",
+    "metadata": {"type": "style_tag", "style_tag": "graphic-print", "category": "streetwear_tops"}
+  },
+  {
+    "id": "style_tag:ribbed-tank",
+    "type": "style_tag",
+    "text": "ribbed-tank: a ribbed-knit tank top, fitted and sleeveless. Also called: rib tank, ribbed cami.",
+    "metadata": {"type": "style_tag", "style_tag": "ribbed-tank", "category": "streetwear_tops"}
+  },
+  {
+    "id": "style_tag:low-rise",
+    "type": "style_tag",
+    "text": "low-rise: jeans or pants that sit below the natural waistline. Also called: low-waist denim, hip-huggers.",
+    "metadata": {"type": "style_tag", "style_tag": "low-rise", "category": "denim_bottoms"}
+  },
+  {
+    "id": "style_tag:cargo-pant",
+    "type": "style_tag",
+    "text": "cargo-pant: pants with multiple utility pockets, typically loose-fit. Also called: cargo jeans, utility pants.",
+    "metadata": {"type": "style_tag", "style_tag": "cargo-pant", "category": "denim_bottoms"}
+  },
+  {
+    "id": "style_tag:baggy",
+    "type": "style_tag",
+    "text": "baggy: loose, relaxed-fit jeans with excess fabric through the leg. Also called: baggy jeans, loose-fit denim.",
+    "metadata": {"type": "style_tag", "style_tag": "baggy", "category": "denim_bottoms"}
+  },
+  {
+    "id": "style_tag:wide-leg",
+    "type": "style_tag",
+    "text": "wide-leg: jeans with a wide, non-tapered leg opening from hip to hem. Also called: wide-leg denim, flare-adjacent jeans.",
+    "metadata": {"type": "style_tag", "style_tag": "wide-leg", "category": "denim_bottoms"}
+  },
+  {
+    "id": "style_tag:raw-hem",
+    "type": "style_tag",
+    "text": "raw-hem: jeans with an unfinished, frayed hem edge instead of a stitched hem. Also called: raw-hem denim, frayed-hem jeans.",
+    "metadata": {"type": "style_tag", "style_tag": "raw-hem", "category": "denim_bottoms"}
+  },
+  {
+    "id": "style_tag:bike-short",
+    "type": "style_tag",
+    "text": "bike-short: fitted, stretch shorts that end mid-thigh, athletic-inspired. Also called: cycling shorts.",
+    "metadata": {"type": "style_tag", "style_tag": "bike-short", "category": "athleisure"}
+  },
+  {
+    "id": "style_tag:tech-jogger",
+    "type": "style_tag",
+    "text": "tech-jogger: performance-fabric jogger pants with tapered ankle cuffs. Also called: tech pants, jogger sweatpants.",
+    "metadata": {"type": "style_tag", "style_tag": "tech-jogger", "category": "athleisure"}
+  },
+  {
+    "id": "style_tag:crop-top",
+    "type": "style_tag",
+    "text": "crop-top: a short top that ends above the waist, athletic or casual. Also called: cropped top, midriff top.",
+    "metadata": {"type": "style_tag", "style_tag": "crop-top", "category": "athleisure"}
+  },
+  {
+    "id": "style_tag:track-pant",
+    "type": "style_tag",
+    "text": "track-pant: straight or tapered athletic pants, often with side stripes. Also called: track bottoms, athletic pants.",
+    "metadata": {"type": "style_tag", "style_tag": "track-pant", "category": "athleisure"}
+  },
+  {
+    "id": "style_tag:co-ord-set",
+    "type": "style_tag",
+    "text": "co-ord-set: a matching top-and-bottom set sold or worn as one coordinated outfit. Also called: co-ord, matching set, two-piece set.",
+    "metadata": {"type": "style_tag", "style_tag": "co-ord-set", "category": "athleisure"}
+  },
+  {
+    "id": "style_tag:multi-pocket-jacket",
+    "type": "style_tag",
+    "text": "multi-pocket-jacket: a jacket with multiple functional pockets, utility-inspired. Also called: cargo jacket, utility jacket.",
+    "metadata": {"type": "style_tag", "style_tag": "multi-pocket-jacket", "category": "utility_outerwear"}
+  },
+  {
+    "id": "style_tag:techwear-shell",
+    "type": "style_tag",
+    "text": "techwear-shell: a technical, weatherproof shell jacket with a utilitarian techwear aesthetic. Also called: tech shell, techwear jacket.",
+    "metadata": {"type": "style_tag", "style_tag": "techwear-shell", "category": "utility_outerwear"}
+  },
+  {
+    "id": "style_tag:quilted",
+    "type": "style_tag",
+    "text": "quilted: a quilted, padded jacket with a stitched diamond or channel pattern. Also called: quilted jacket, puffer-adjacent jacket.",
+    "metadata": {"type": "style_tag", "style_tag": "quilted", "category": "utility_outerwear"}
+  },
+  {
+    "id": "style_tag:oversized-parka",
+    "type": "style_tag",
+    "text": "oversized-parka: a long, oversized parka-style coat, often with a hood. Also called: parka, oversized coat.",
+    "metadata": {"type": "style_tag", "style_tag": "oversized-parka", "category": "utility_outerwear"}
+  },
+  {
+    "id": "style_tag:boxy-jacket",
+    "type": "style_tag",
+    "text": "boxy-jacket: a jacket with a boxy, squared-off silhouette rather than a fitted cut. Also called: boxy coat, cropped boxy jacket.",
+    "metadata": {"type": "style_tag", "style_tag": "boxy-jacket", "category": "utility_outerwear"}
+  }
+]

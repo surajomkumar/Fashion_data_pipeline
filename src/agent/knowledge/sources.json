@@ -1,0 +1,20 @@
+[
+  {
+    "id": "source:competitor",
+    "type": "source",
+    "text": "Competitor / competitors / rival brands: product listings scraped from other brands' product detail pages. Reflects what other retailers are stocking and how those products are performing - rating velocity, stock status, price.",
+    "metadata": {"type": "source", "source": "competitor"}
+  },
+  {
+    "id": "source:self",
+    "type": "source",
+    "text": "Self / our catalog / we / us / our own products: the styles we currently stock and sell. Reflects our own sell-through rate, stock status, and pricing - not competitor or social data.",
+    "metadata": {"type": "source", "source": "self"}
+  },
+  {
+    "id": "source:instagram",
+    "type": "source",
+    "text": "Instagram / social media / influencers / posts: organic, user-generated social content, not sales data. Reflects cultural and social trend signal via engagement - likes, comments, follower reach.",
+    "metadata": {"type": "source", "source": "instagram"}
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "aesthetic_concept:y2k",
+    "type": "aesthetic_concept",
+    "text": "Y2K: early-2000s revival aesthetic - low-rise silhouettes, metallics, logomania, butterfly motifs, bold graphics, nostalgic pop-culture references.",
+    "metadata": {"type": "aesthetic_concept", "concept": "y2k"}
+  },
+  {
+    "id": "aesthetic_concept:elevated-basics",
+    "type": "aesthetic_concept",
+    "text": "Elevated basics: minimal, quality-forward essentials in neutral tones - clean silhouettes, muted color palettes, subtle branding, understated over loud.",
+    "metadata": {"type": "aesthetic_concept", "concept": "elevated-basics"}
+  },
+  {
+    "id": "aesthetic_concept:loud-streetwear",
+    "type": "aesthetic_concept",
+    "text": "Loud streetwear: bold graphics, statement logos, bright or clashing colors, oversized fits - designed to draw attention rather than blend in.",
+    "metadata": {"type": "aesthetic_concept", "concept": "loud-streetwear"}
+  },
+  {
+    "id": "aesthetic_concept:nostalgic",
+    "type": "aesthetic_concept",
+    "text": "Nostalgic: styles referencing past decades or earlier personal/cultural eras - vintage graphics, throwback silhouettes, retro color palettes.",
+    "metadata": {"type": "aesthetic_concept", "concept": "nostalgic"}
+  },
+  {
+    "id": "aesthetic_concept:minimalist",
+    "type": "aesthetic_concept",
+    "text": "Minimalist: pared-back design with few decorative elements - solid colors, simple cuts, little to no graphic print or branding.",
+    "metadata": {"type": "aesthetic_concept", "concept": "minimalist"}
+  },
+  {
+    "id": "aesthetic_concept:maximalist",
+    "type": "aesthetic_concept",
+    "text": "Maximalist: layered, decorative, more-is-more design - mixed prints, bold color combinations, multiple statement pieces at once.",
+    "metadata": {"type": "aesthetic_concept", "concept": "maximalist"}
+  },
+  {
+    "id": "aesthetic_concept:quiet-luxury",
+    "type": "aesthetic_concept",
+    "text": "Quiet luxury: understated, high-quality pieces that signal wealth through fabric and fit rather than visible branding or logos.",
+    "metadata": {"type": "aesthetic_concept", "concept": "quiet-luxury"}
+  },
+  {
+    "id": "aesthetic_concept:gorpcore",
+    "type": "aesthetic_concept",
+    "text": "Gorpcore: outdoor/hiking-inspired utility wear used as everyday fashion - technical fabrics, multi-pocket jackets, earth tones, functional details.",
+    "metadata": {"type": "aesthetic_concept", "concept": "gorpcore"}
+  }
+]

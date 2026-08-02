@@ -1,0 +1,38 @@
+[
+  {
+    "id": "metric:momentum",
+    "type": "metric",
+    "text": "momentum: categorical trend direction derived from a metric's week-over-week percent change. Rising if change is greater than 10%, declining if less than -10%, otherwise flat.",
+    "metadata": {"type": "metric", "metric": "momentum"}
+  },
+  {
+    "id": "metric:pct_change",
+    "type": "metric",
+    "text": "pct_change: the percent change of a metric from the first to the last week in its 4-week window.",
+    "metadata": {"type": "metric", "metric": "pct_change"}
+  },
+  {
+    "id": "metric:rating_velocity",
+    "type": "metric",
+    "text": "rating_velocity: weekly count of new product ratings for a competitor SKU - a proxy for purchase or attention velocity.",
+    "metadata": {"type": "metric", "metric": "rating_velocity"}
+  },
+  {
+    "id": "metric:sell_through_rate",
+    "type": "metric",
+    "text": "sell_through_rate: fraction of available self-catalog stock sold in a given week.",
+    "metadata": {"type": "metric", "metric": "sell_through_rate"}
+  },
+  {
+    "id": "metric:oos_weeks_out_of_4",
+    "type": "metric",
+    "text": "oos_weeks_out_of_4: count of weeks, out of the last 4, a SKU was flagged out of stock.",
+    "metadata": {"type": "metric", "metric": "oos_weeks_out_of_4"}
+  },
+  {
+    "id": "metric:engagement",
+    "type": "metric",
+    "text": "engagement: sum of likes and comments on an Instagram post - a proxy for social attention.",
+    "metadata": {"type": "metric", "metric": "engagement"}
+  }
+]
